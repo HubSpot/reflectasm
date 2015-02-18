@@ -106,9 +106,9 @@
 						<configuration>
 							<!-- remove all classes of dependencies that are not used by the project -->
 							<minimizeJar>true</minimizeJar>
+							<createSourcesJar>true</createSourcesJar>
 							<createDependencyReducedPom>true</createDependencyReducedPom>
-							<shadedArtifactAttached>true</shadedArtifactAttached>
-							<shadedClassifierName>shaded</shadedClassifierName>
+							<promoteTransitiveDependencies>true</promoteTransitiveDependencies>
 							<artifactSet>
 								<includes>
 									<include>org.ow2.asm:asm</include>
