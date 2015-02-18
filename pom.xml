@@ -132,13 +132,14 @@
 		</plugins>
 	</build>
 
-  <repositories>
-    <repository>
-      <id>${hubspot.nexus.serverId}</id>
-      <url>${hubspot.nexus.hostname}/nexus/content/groups/development</url>
-      <snapshots>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
-  </repositories>
+	<distributionManagement>
+		<repository>
+			<id>${hubspot.nexus.serverId}</id>
+			<url>${hubspot.nexus.hostname}/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>${hubspot.nexus.serverId}</id>
+			<url>${hubspot.nexus.hostname}/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
