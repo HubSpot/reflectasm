@@ -109,6 +109,11 @@
 							<createDependencyReducedPom>true</createDependencyReducedPom>
 							<shadedArtifactAttached>true</shadedArtifactAttached>
 							<shadedClassifierName>shaded</shadedClassifierName>
+              <artifactSet>
+                <includes>
+                  <include>org.ow2.asm:asm</include>
+                </includes>
+              </artifactSet>
 							<relocations>
 								<relocation>
 									<pattern>org.objectweb.asm</pattern>
