@@ -59,15 +59,15 @@
 		<testSourceDirectory>test</testSourceDirectory>
 
 		<plugins>
-     			 <plugin>
-        			<groupId>org.apache.maven.plugins</groupId>
-        			<artifactId>maven-compiler-plugin</artifactId>
-        			<version>3.1</version>
-        			<configuration>
-          				<source>1.5</source>
-          				<target>1.5</target>
-        			</configuration>
-      			</plugin>
+					 <plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-compiler-plugin</artifactId>
+							<version>3.1</version>
+							<configuration>
+									<source>1.5</source>
+									<target>1.5</target>
+							</configuration>
+						</plugin>
 			<!-- Disable resources (project has none) -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -109,11 +109,11 @@
 							<createDependencyReducedPom>true</createDependencyReducedPom>
 							<shadedArtifactAttached>true</shadedArtifactAttached>
 							<shadedClassifierName>shaded</shadedClassifierName>
-              <artifactSet>
-                <includes>
-                  <include>org.ow2.asm:asm</include>
-                </includes>
-              </artifactSet>
+							<artifactSet>
+								<includes>
+									<include>org.ow2.asm:asm</include>
+								</includes>
+							</artifactSet>
 							<relocations>
 								<relocation>
 									<pattern>org.objectweb.asm</pattern>
