@@ -49,7 +49,7 @@ public abstract class ConstructorAccess<T> {
 		String accessClassName = className + "ConstructorAccess";
 		if (accessClassName.startsWith("java.")) accessClassName = "reflectasm." + accessClassName;
 		Class accessClass;
-		
+
 		AccessClassLoader loader = AccessClassLoader.get(type);
 		synchronized (loader) {
 			try {
@@ -90,7 +90,7 @@ public abstract class ConstructorAccess<T> {
 												"com/esotericsoftware/reflectasm/ConstructorAccess";
 
 				ClassWriter cw = new ClassWriter(0);
-				cw.visit(V1_1, ACC_PUBLIC + ACC_SUPER, accessClassNameInternal, null, superclassNameInternal, null);
+				cw.visit(V1_7, ACC_PUBLIC + ACC_SUPER, accessClassNameInternal, null, superclassNameInternal, null);
 
 				insertConstructor(cw, superclassNameInternal);
 				insertNewInstance(cw, classNameInternal);
