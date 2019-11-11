@@ -7,7 +7,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.esotericsoftware</groupId>
 	<artifactId>reflectasm</artifactId>
-	<version>1.10.1-hubspot-SNAPSHOT</version>
+	<!-- From version 1.10.1 -->
+	<version>1.0-hubspot-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 	<name>ReflectASM</name>
 	<description>High performance Java reflection using code generation</description>
